@@ -25,6 +25,14 @@ public class Cheese {
     @Size(min=1, message = "Description must not be empty")
     private String description;
 
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
     @ManyToOne
     private Category category;
 
